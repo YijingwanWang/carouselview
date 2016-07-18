@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:yj="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.carouselview.yj.carouselviewlibrary.CarouselView
+        android:id="@+id/cvPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        yj:carouselType="finite"
+        yj:tag_diameter="5dp"
+        yj:tag_selectedColor="#ff669900"
+        yj:tag_unselectedColor="#ffaa66cc"
+        yj:indicator_backaground="#22000000"
+        yj:pageTransformer="defaultTransformer"
+        yj:indicatorModel="text_tag"
+        yj:rotationInterval="2000"
+        yj:descriptionTextSize="14sp"
+        yj:descriptionTextColor="@android:color/white"
+        yj:indicator_paddingTop="10dp"
+        yj:indicator_paddingLeft="10dp"
+        yj:indicator_paddingBottom="10dp"
+        yj:indicatorLayout="@layout/tag_layout"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:background="@android:color/holo_orange_dark"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStartCarousel"
+            android:text="Start Carousel"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStopCarousel"
+            android:text="Stop Carousel"
+            />
+    </LinearLayout>
+
+</LinearLayout>

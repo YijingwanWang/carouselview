@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rlCarouselRoot"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vgCarousel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/flIndicatorRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+
+        >
+        <ViewStub
+            android:id="@+id/vsDefaultIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/center_indicator_layout"
+            />
+        <ViewStub
+            android:id="@+id/vsTextIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/text_indicator_layout"
+            />
+        <ViewStub
+            android:id="@+id/vsGoldenSectionIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/golden_section_indicator_layout"
+            />
+
+    </FrameLayout>
+
+</RelativeLayout>

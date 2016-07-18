@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="carouselViewArrtibute">
+        <!--轮播模式 infinite无限循环，finite有限-->
+        <attr name="carouselType" format="enum">
+            <enum name="infinite" value="0"/>
+            <enum name="finite" value="1"/>
+        </attr>
+        <!--小圆标的直径大小，小圆标间距也将有此计算-->
+        <attr name="tag_diameter" format="dimension"/>
+        <!--小圆标 表示当前显示页的颜色-->
+        <attr name="tag_selectedColor" format="color|reference"/>
+        <!--小圆标 表示非当前显示页的颜色-->
+        <attr name="tag_unselectedColor" format="color|reference"/>
+        <!--指示器背景-->
+        <attr name="indicator_backaground" format="color|reference"/>
+        <!--切换页面动画-->
+        <attr name="pageTransformer" format="enum">
+            <enum name="defaultTransformer" value="0"/>
+            <!--这里的动画类型使用官方的例子详见：https://developer.android.com/training/animation/screen-slide.html-->
+            <enum name="zoomOut" value="1"/>
+            <enum name="depth" value="2"/>
+        </attr>
+        <!--轮播控件底部的指示器对应的布局ID-->
+        <attr name="indicatorLayout" format="reference"/>
+        <!--底部指示器类型-->
+        <attr name="indicatorModel" format="enum">
+            <enum name="center_tag" value="0"/>
+            <enum name="text_tag" value="1"/>
+            <enum name="goldenSection_tag" value="2"/>
+        </attr>
+        <!--轮播间隔时间-->
+        <attr name="rotationInterval" format="integer"/>
+        <!--指示器内边距-->
+        <attr name="indicator_padding" format="dimension"/>
+        <attr name="indicator_paddingLeft" format="dimension"/>
+        <attr name="indicator_paddingTop" format="dimension"/>
+        <attr name="indicator_paddingRight" format="dimension"/>
+        <attr name="indicator_paddingBottom" format="dimension"/>
+        <!--描述文字字体大小-->
+        <attr name="descriptionTextSize" format="dimension"/>
+        <!--描述文字颜色-->
+        <attr name="descriptionTextColor" format="color|reference"/>
+        <!--设置自动轮播时页面间的切换/过度速度-->
+        <attr name="carouselSpeed" format="integer"/>
+     </declare-styleable>
+
+
+</resources>
