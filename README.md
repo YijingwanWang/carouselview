@@ -23,7 +23,7 @@ CarouselView是一个使用简单且支持多种样式的轮播/Banner图/引导
 	}
 ```  
 **Step 3**  
-添加如下代码到你的布局文件选中  
+添加如下代码到你的布局文件中  
 ```java 
     <com.carouselview.yj.carouselviewlibrary.CarouselView
         android:id="@+id/cvPager"
