@@ -306,7 +306,18 @@ c.你可能需要在代码中做必要的设置。比如这里的ImageView——
 | descriptionTextColor    | color/reference                             |    页面描述文字的字体颜色 |
 | carouselSpeed           | integer                                     |    轮播图自动切换页面时的页面切换时间，单位毫秒 |
 
-  
+#其他你可能要注意/知道的
+1，本样例中使用的是几张高清图片如果你下载该样例或在实际使用，测试中也使用高清图片最好将图片放置在资源文件夹的mipmap——xxxhdpi，如果  
+放置在mipmap-mdpi可能会出现OOM异常。
+2，本样例中没有提供设置Tag间距的属性或者方法。  
+3，如果使用indicatorModel属性且设置其值为text_tag/goldenSection_tag，并同时设置了Tag直径——tag_diameter，较大值，或者添加的图片过多  
+可能会导致Tag显示不全。  
+4，The code is ugly but it works :( . I haven't refactoring the code yet.
+5,如果你开启了自动切换功能，当手指去触摸或者拖动页面自动切换功能会停止，知道你的手指离开屏幕才会从当前页面继续自动切换。  
+......
+
+
+
   
 
 
