@@ -1,5 +1,5 @@
 # carouselview
-CarouselView是一个使用简单且支持多种样式的轮播/Banner图组合控件  
+CarouselView是一个使用简单且支持多种样式的轮播/Banner图/引导页的组合控件  
 
 
 ![图片描述](https://github.com/YijingwanWang/carouselview/blob/master/screenshot/gif1.gif)
