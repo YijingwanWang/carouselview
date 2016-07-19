@@ -3,7 +3,67 @@ CarouselView是一个使用简单且支持多种样式的轮播/Banner图组合�
 
 
 ![图片描述](https://github.com/YijingwanWang/carouselview/blob/master/screenshot/gif1.gif)
+#使用方法
 
+**Step 1**  
+在你项目的根build.gradle添加**maven { url "https://jitpack.io" }**
+```java 
+    allprojects {
+		repositories {
+			...
+			maven { url "https://jitpack.io" }
+		}
+	}
+```  
+**Step 2**  
+添加依赖  
+```java 
+    dependencies {
+	        compile 'com.github.YijingwanWang:carouselview:v1.1'
+	}
+```  
+**Step 3**  
+添加如下代码到你的布局文件选中  
+```java 
+    <com.carouselview.yj.carouselviewlibrary.CarouselView
+        android:id="@+id/cvPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        yj:indicator_paddingTop="10dp"
+        yj:indicator_paddingBottom="10dp"
+        />
+```  
+**Step 4**  
+代码中初始化  
+```java 
+    private CarouselView carouselView;
+    private final int[] imgId={R.mipmap.img0,R.mipmap.img1,R.mipmap.img2,R.mipmap.img3,R.mipmap.img4};
+    private List<View> views;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_default_style_test);
+        init();
+    }
+    private void init(){
+        carouselView=(CarouselView)findViewById(R.id.cvPager);
+        initData();
+        carouselView.setItemData(views);
+    }
+    private void initData(){
+        views=new ArrayList<>();
+        ImageView imageView;
+        for(int i=0;i<imgId.length;i++){
+            imageView=new ImageView(this);
+            imageView.setImageResource(imgId[i]);
+            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            imageView.setId(i);
+            views.add(imageView);
+        }
+    }
+```  
 #提供多种样式选择
 
 **1.你可以通过对应的属性设置轮播图页面切换过程中的动画效果（目前只提供三种动画样式）。**
