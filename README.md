@@ -313,6 +313,7 @@ c.你可能需要在代码中做必要的设置。比如这里的ImageView——
 3，如果使用indicatorModel属性且设置其值为text_tag/goldenSection_tag，并同时设置了Tag直径——tag_diameter，较大    值，或者添加的图片过多可能会导致Tag显示不全。  
 4，The code is ugly but it works :( . I haven't refactoring the code yet.  
 5,如果你开启了自动切换功能，当手指去触摸或者拖动页面自动切换功能会停止，知道你的手指离开屏幕才会从当前页面继续自动切换。  
+6,CarouselView 还有许多没有完成，实现的东西可能会在今后的版本中添加。  
 ......
 
 
