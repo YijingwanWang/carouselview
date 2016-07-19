@@ -246,7 +246,7 @@ c.你可能需要在代码中做必要的设置。比如这里的ImageView——
 ![图片描述](https://github.com/YijingwanWang/carouselview/blob/master/screenshot/gif3.gif)  
 自定义指示器样式可能并不觉得使用方便或者不能应对所有可能性所以这也算是目前CarouselView不足的方面之一。
 
-#你可能会使用到的方法介绍
+#你可能会使用到的方法
 
 **addmOnCarouselViewPageChangeListener(OnCarouselViewPageChangeListener mOnCarouselViewPageChangeListener)**  
     设置CarouselView 页面切换监听事件 ，回调方法    
